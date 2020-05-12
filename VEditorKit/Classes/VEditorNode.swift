@@ -83,11 +83,11 @@ open class VEditorNode: ASDisplayNode, ASTableDelegate, ASTableDataSource {
         return activeTextContainCellNode?.textNode
     }
     
-    open let parser: VEditorParser
-    open let editorRule: VEditorRule
+    public let parser: VEditorParser
+    public let editorRule: VEditorRule
     open var editorContents: [VEditorContent] = []
-    open let editorStatusRelay = PublishRelay<Status>()
-    open let disposeBag = DisposeBag()
+    public let editorStatusRelay = PublishRelay<Status>()
+    public let disposeBag = DisposeBag()
     open weak var delegate: VEditorNodeDelegate!
     open var keyboardHeight: CGFloat = 0.0
     
