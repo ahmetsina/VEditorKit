@@ -12,7 +12,7 @@ import RxSwift
 
 open class VEditorDeleteMediaNode: ASControlNode {
     
-    open let deleteButtonNode = ASButtonNode()
+    public let deleteButtonNode = ASButtonNode()
     
     public init(_ color: UIColor = .red,
                 borderWidth: CGFloat = 5.0, // default is 5.0pt
