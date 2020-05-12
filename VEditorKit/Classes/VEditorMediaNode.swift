@@ -24,7 +24,7 @@ public protocol VEditorMediaNodeEventProtocol {
 
 open class VEditorMediaNode<TargetNode: ASControlNode>: ASCellNode, VEditorMediaNodeEventProtocol {
     
-    open let node: TargetNode
+    public let node: TargetNode
     
     open lazy var textInsertionNode: ASControlNode = {
         let node = ASControlNode()
@@ -33,7 +33,7 @@ open class VEditorMediaNode<TargetNode: ASControlNode>: ASCellNode, VEditorMedia
         return node
     }()
     
-    open let deleteControlNode: VEditorDeleteMediaNode
+    public let deleteControlNode: VEditorDeleteMediaNode
     
     public let textInsertionRelay = PublishRelay<IndexPath>()
     public let didTapDeleteRelay = PublishRelay<IndexPath>()
