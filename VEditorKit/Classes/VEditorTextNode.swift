@@ -53,7 +53,7 @@ open class VEditorTextNode: ASEditableTextNode, ASEditableTextNodeDelegate {
     open var isEdit: Bool = true
     open weak var regexDelegate: VEditorRegexApplierDelegate!
     open var automaticallyGenerateLinkPreview: Bool = false
-    open let becomeActiveRelay = PublishRelay<Void>()
+    public let becomeActiveRelay = PublishRelay<Void>()
     
     internal let rule: VEditorRule
     internal let currentLocationXMLTagsRelay = PublishRelay<[String]>()
